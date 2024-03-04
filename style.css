@@ -1,0 +1,31 @@
+.card {
+  width: 75%;
+  height: 15rem;
+  perspective: 150rem;
+  position: relative;
+}
+.card_side {
+  height: 15rem;
+  width: 15rem;
+  background-color: goldenrod;
+  color: white;
+  transition: all 3.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border-radius: 0.4rem;
+}
+.card_side.card_side__front {
+  background-color: orangered;
+}
+.card_side.card_side__back {
+  background-color: olivedrab;
+  transform: rotateY(-180deg);
+}
+.card:hover .card_side__front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card_side__back {
+  transform: rotateY(0deg);
+}

@@ -15,9 +15,10 @@
   left: 0;
   backface-visibility: hidden;
   border-radius: 0.4rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.15);
 }
 .card_side.card_side__front {
-  background-color: orangered;
+  background-color: orangered; */linear-gradient(to right bottom, yellowgreen, olive)*/
 }
 .card_side.card_side__back {
   background-color: olivedrab;
